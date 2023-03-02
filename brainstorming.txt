@@ -1,9 +1,47 @@
+Requirements:
 - Need to find out if there is an API to get board game information
     - BoardGameAtlas
+        - Might need to do some filtering in javascript depending on data and API capabilities.
 - What other server-side API could we use that would be useful?
+    - Funny quotes? Keeps with the "fun" theme of gaming.
+    - Weather API - useful for scheduling game night dates if games include yard games like cornhole, croquet, bocce, etc. and not just tabletop games
+- LocalStorage: Will use to save list of "Owned" and "Wish List" games.
+- CSS framework other than Bootstrap: Will use Bulma
 
 Functionality:
-- MVP: Ability to search for board games by category, name, price...?
+- MVP: Ability to search for board games by category, name, price, # of players, ...?
+    - drop-down to select search type OR 3 different inputs for each of "Category", "Name", "Price" with the ability to enter values in any combination
+        - Maybe Price is a drop-down with ranges with a default of "any"?
+        - Should probably predefine categories and have that be a drop-down, too, and include "any" option.
+        - Name should be optional.
+        - Min and Max # of players should be optional
+    - Area to display search results
+        - Name
+        - Thumbnail image (requires URL from API if available)
+        - Category
+        - Rating
+        - Release Date/Year
+        - Publisher
+        - # Players
+        - Price (MSRP)?
+    - EXTRA: Ability to change sort order of results:
+        - Name
+        - Rating?
+        - Price?
+        - Release Date/Year?
+        - Publisher?
 - MVP: Ability to save games owned list (use localStorage)
+    - each search result should have a button to add to "Owned" list
+        - Don't show "Owned" button if game is already in user's "Owned" list.
+    - Need an area or a button to pop-up modal to display "Owned" games list.
+    - Need ability to delete game from list.  Each item should have a Delete button.
+    - ** Use event delegation and data attributes **
 - MVP: Ability to save games wish list (use localStorage)
-- Extra: Ability to create a calendar event for a game night that captures which games will be played.
+    - each search result should have a button to add to add to "Wishlist"
+        - Don't show "Wish" button if game is alread in user's "Wish List".
+    - Need an area or a button to pop-up modal to display "Wish List" games list.
+    - Need ability to delete game from list.  Each item should have a Delete button.
+    - ** Use event delegation and data attributes **
+- EXTRA: Ability to create a calendar event for a game night that captures which games will be played.
+    - Select games from "Owned" list only. ?  Or allow any?
+
