@@ -1,0 +1,9 @@
+- Need to find out if there is an API to get board game information
+    - BoardGameAtlas
+- What other server-side API could we use that would be useful?
+
+Functionality:
+- MVP: Ability to search for board games by category, name, price...?
+- MVP: Ability to save games owned list (use localStorage)
+- MVP: Ability to save games wish list (use localStorage)
+- Extra: Ability to create a calendar event for a game night that captures which games will be played.
