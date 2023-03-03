@@ -1,6 +1,6 @@
 var searchInput = document.querySelector('#search');
 var APIKey = '1TRKav8sJ5';
-var categoryName = 'Aliens'
+var categoryId = 'tJxatX2ZbW'
 var lowerThanPrice = '100.99'
 var greaterThanPrice = '5.99'
 
@@ -16,8 +16,10 @@ function searchAPI(category, name, ltPrice, gtPrice) {
     .then((data)=> {console.log('Search API return', data)})
 }
 
-searchAPI(categoryName, searchInput.value, lowerThanPrice, greaterThanPrice)
+// searchAPI(categoryName, searchInput.value, lowerThanPrice, greaterThanPrice)
 
 // Search Button
-// searchInput.addEventListener('click', searchAPI);
+document.querySelector('#searchButton').addEventListener('click', function() {
+    searchAPI(categoryId, searchInput.value, lowerThanPrice, greaterThanPrice)
+});
 
