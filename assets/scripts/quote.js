@@ -18,7 +18,7 @@ function callFunnyQuoteAPI() {
       // can figure out what to do with it.
       console.log(data);
       quoteEl.textContent = data[0].quote;
-      authorEl.textContent = data[0].author;
+      authorEl.textContent = "- " + data[0].author;
     });
   // EXAMPLE JQUERY if we go that route:
   //   $.ajax({

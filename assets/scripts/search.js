@@ -34,6 +34,9 @@ function searchAPI(category, name, ltPrice, gtPrice) {
 // searchAPI(categoryName, searchInput.value, lowerThanPrice, greaterThanPrice)
 
 // Search Button
-document.querySelector("#searchButton").addEventListener("click", function () {
-  searchAPI(categoryId, searchInput.value, lowerThanPrice, greaterThanPrice);
-});
+document
+  .querySelector("#searchForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    searchAPI(categoryId, searchInput.value, lowerThanPrice, greaterThanPrice);
+  });

@@ -17,28 +17,42 @@
 
     <section id="searchForm">
       <input id="search" placeholder="Search Boardgames" />
-      <!--
-        - Drop-down for Category
-        - Drop-down for Price Range
-        - Min and Max inputs for # of players - default to 1 and 4
-        - Textbox/input for Game Name
-        -->
-      <button id="searchButton">Search</button>
+      <form id="searchForm">
+        <!--
+            - Drop-down for Category
+            - Drop-down for Price Range
+            - Min and Max inputs for # of players - default to 1 and 4
+            - Textbox/input for Game Name
+            -->
+        <button id="searchButton" type="submit">Search</button>
+      </form>
     </section>
 
     <!-- Need area to display funny quote -->
     <section id="quoteSection">
-      <h1 class="title is-1">Your humorous quote for the day:</h1>
+      <h1 class="title is-3">Your humorous quote for the day:</h1>
       <div id="quote"></div>
-      <div id="author"></div>
+      <div id="author" class="is-italic"></div>
     </section>
+
     <!-- Need area to display search results -->
+    <section id="searchResults"></section>
 
     <!-- Need button to display Owned list modal -->
     <!-- area to list Owned (should be modal) -->
+    <section id="ownedList" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content"></div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </section>
 
     <!-- Need button to display Wish List list modal -->
     <!-- area to list Owned (should be modal) -->
+    <section id="wishList" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content"></div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </section>
 
     <script src="./assets/scripts/ownedList.js"></script>
     <script src="./assets/scripts/quote.js"></script>
