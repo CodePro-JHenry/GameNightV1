@@ -15,16 +15,23 @@
   <body>
     <h1>Welcome to Game Night</h1>
 
-    <input id="search" placeholder="Search Boardgames" />
-    <!--
-    - Drop-down for Category
-    - Drop-down for Price Range
-    - Min and Max inputs for # of players - default to 1 and 4
-    - Textbox/input for Game Name
-  -->
-    <button id="searchButton">Search</button>
+    <section id="searchForm">
+      <input id="search" placeholder="Search Boardgames" />
+      <!--
+        - Drop-down for Category
+        - Drop-down for Price Range
+        - Min and Max inputs for # of players - default to 1 and 4
+        - Textbox/input for Game Name
+        -->
+      <button id="searchButton">Search</button>
+    </section>
 
     <!-- Need area to display funny quote -->
+    <section id="quoteSection">
+      <h1 class="title is-1">Your humorous quote for the day:</h1>
+      <div id="quote"></div>
+      <div id="author"></div>
+    </section>
     <!-- Need area to display search results -->
 
     <!-- Need button to display Owned list modal -->
@@ -33,6 +40,9 @@
     <!-- Need button to display Wish List list modal -->
     <!-- area to list Owned (should be modal) -->
 
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/ownedList.js"></script>
+    <script src="./assets/scripts/quote.js"></script>
+    <script src="./assets/scripts/search.js"></script>
+    <script src="./assets/scripts/wishList.js"></script>
   </body>
 </html>
