@@ -19,7 +19,7 @@ Functionality:
         - Name
         - Thumbnail image (requires URL from API if available)
         - Category
-        - Rating
+        - Rating ?
         - Release Date/Year
         - Publisher
         - # Players
