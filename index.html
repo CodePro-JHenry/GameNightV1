@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Night</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Night</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-</head>
+  <body>
+    <h1>Welcome to Game Night</h1>
 
-<body>
-  <h1>Welcome to Game Night</h1>
+    <section id="searchForm">
+      <input id="search" placeholder="Search Boardgames" />
+      <form id="searchForm">
+        <!--
+            - Drop-down for Category
+            - Drop-down for Price Range
+            - Min and Max inputs for # of players - default to 1 and 4
+            - Textbox/input for Game Name
+            -->
+        <button id="searchButton" type="submit">Search</button>
+      </form>
+    </section>
 
-  <input id="search" placeholder="Search Boardgames" />
-  <button id="searchButton">Search</button>
+    <!-- Need area to display funny quote -->
+    <section id="quoteSection">
+      <h1 class="title is-3">Your humorous quote for the day:</h1>
+      <div id="quote"></div>
+      <div id="author" class="is-italic"></div>
+    </section>
 
-  <script src="./assets/scripts/index.js"></script>
-</body>
+    <!-- Need area to display search results -->
+    <section id="searchResults"></section>
 
+    <!-- Need button to display Owned list modal -->
+    <!-- area to list Owned (should be modal) -->
+    <section id="ownedList" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content"></div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </section>
+
+    <!-- Need button to display Wish List list modal -->
+    <!-- area to list Owned (should be modal) -->
+    <section id="wishList" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content"></div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </section>
+
+    <script src="./assets/scripts/ownedList.js"></script>
+    <script src="./assets/scripts/quote.js"></script>
+    <script src="./assets/scripts/search.js"></script>
+    <script src="./assets/scripts/wishList.js"></script>
+  </body>
 </html>
